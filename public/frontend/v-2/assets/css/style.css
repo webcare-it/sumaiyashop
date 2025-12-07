@@ -1,7 +1,7 @@
 /*common css start*/
 :root{
-    --primary: #053C6B;
-    --category-bg: #053C6B;
+    --primary: #f17424;
+    --category-bg: #f17424;
 }
 * {
 padding: 0;
@@ -103,7 +103,7 @@ font-family: 'Quicksand', sans-serif;
 .search-form-outer .search-form input {
     width: 600px;
     height: 50px;
-    border: 2px solid #053C6B;
+    border: 2px solid #f17424;
     border-radius: 5px;
 }
 
@@ -179,7 +179,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .shopping-cart-total {
-    border-top: 2px solid #053C6B;
+    border-top: 2px solid #f17424;
     margin: 25px 0;
     padding-top: 17px;
 }
@@ -194,7 +194,7 @@ font-family: 'Quicksand', sans-serif;
 .shopping-cart-total h4 span {
     font-size: 20px;
     float: right;
-    color: #053C6B;
+    color: #f17424;
 }
 
 .shopping-cart-button {
@@ -206,8 +206,8 @@ font-family: 'Quicksand', sans-serif;
 
 .shopping-cart-button .view-cart-link {
     background-color: transparent;
-    border: 2px solid #053C6B;
-    color: #053C6B;
+    border: 2px solid #f17424;
+    color: #f17424;
     padding: 8px 20px;
     font-size: 16px;
     font-weight: 600;
@@ -222,19 +222,19 @@ font-family: 'Quicksand', sans-serif;
     color: #ffffff;
     border-radius: 4px;
     padding: 8px 20px;
-    background-color: #053C6B;
+    background-color: #f17424;
     font-family: "Quicksand", sans-serif;
-    border: 2px solid #053C6B;
+    border: 2px solid #f17424;
 }
 
 .view-cart-link:hover {
-    background: #053C6B;
+    background: #f17424;
     color: #fff;
 }
 
 .checkout-link:hover {
     background: transparent;
-    color: #053C6B;
+    color: #f17424;
 }
 
 .header-top-right-item .account-list {
@@ -286,7 +286,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .header-top-right-item-link:hover {
-    color: #053C6B;
+    color: #f17424;
 }
 
 .header-top-right-item-link .icon-outer {
@@ -302,7 +302,7 @@ font-family: 'Quicksand', sans-serif;
     position: absolute;
     top: -15px;
     right: -5px;
-    background: #053C6B;
+    background: #f17424;
     color: #fff;
     width: 20px;
     height: 20px;
@@ -323,7 +323,7 @@ font-family: 'Quicksand', sans-serif;
 
 .cart-product-name-price .product-name {
     font-size: 16px;
-    color: #053C6B;
+    color: #f17424;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -361,7 +361,7 @@ font-family: 'Quicksand', sans-serif;
 
 .account-list-item:hover .account-list-item-link,
 .account-list-item:hover .account-list-item-link i {
-    color: #053C6B;
+    color: #f17424;
 }
 /*Top Header section css End*/
 
@@ -376,7 +376,7 @@ font-family: 'Quicksand', sans-serif;
 
   .category-icon-outer {
       display: inline-block;
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
       font-size: 16px;
       font-weight: 700;
@@ -449,8 +449,8 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .category-list-item-link:hover {
-      color: #053C6B;
-      border: 1px solid #053C6B;
+      color: #f17424;
+      border: 1px solid #f17424;
       -webkit-box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
       box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
       transition: all .3s ease;
@@ -499,7 +499,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .category-submenu-item-link:hover {
-      color: #053C6B;
+      color: #f17424;
       background-color: #F2F2F2;
   }
 
@@ -532,7 +532,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .manu-list .manu-list-item .manu-list-item-link:hover {
-      color: #053C6B;
+      color: #f17424;
   }
 
   .nav-toggle-btn {
@@ -641,7 +641,7 @@ font-family: 'Quicksand', sans-serif;
       right: 24%;
       height: 100%;
       border: none;
-      background: #053C6B;
+      background: #f17424;
       padding: 15px 40px;
       color: #fff;
       font-size: 16px;
@@ -655,7 +655,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .account-list-item-link:hover{
-      color: #053C6B;
+      color: #f17424;
   }
 
   .slider-items-wrapper .slick-dots {
@@ -674,7 +674,7 @@ font-family: 'Quicksand', sans-serif;
       height: 20px;
       border-radius: 50%;
       margin-right: 10px;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       transition: all .3s ease;
   }
 
@@ -683,7 +683,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .slider-items-wrapper .slick-dots li.slick-active {
-      background: #053C6B;
+      background: #f17424;
       border: none;
   }
   /*Home Slider section css End*/
@@ -751,11 +751,11 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .categoris-items-wrapper .owl-nav .owl-next:hover {
-      background: #053C6B!important;
+      background: #f17424!important;
   }
 
   .categoris-items-wrapper .owl-nav .owl-prev:hover {
-      background: #053C6B!important;
+      background: #f17424!important;
   }
 
   .categoris-items-wrapper .owl-nav .owl-prev:hover span {
@@ -802,7 +802,7 @@ font-family: 'Quicksand', sans-serif;
   .banner-item-outer .banner-content .shop-now-btn {
       display: inline-block;
       padding: 7px 8px 7px 12px;
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
       font-size: 14px;
       border-radius: 5px;
@@ -907,11 +907,11 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .product-image-outer .product-action .action-btn i {
-      color: #053C6B;
+      color: #f17424;
   }
 
   .product-image-outer .product-action .action-btn:hover i {
-      color: #053C6B;
+      color: #f17424;
       transition: all .3s ease;
   }
 
@@ -992,7 +992,7 @@ font-family: 'Quicksand', sans-serif;
   .product-item-bottom .product-price span {
       font-size: 18px;
       font-weight: bold;
-      color: #053C6B;
+      color: #f17424;
   }
 
   .product-item-bottom .add-cart .add-cart-btn {
@@ -1002,12 +1002,12 @@ font-family: 'Quicksand', sans-serif;
       font-size: 14px;
       font-weight: 700;
       border: none;
-      color: #053C6B;
+      color: #f17424;
       transition: all .3s ease;
   }
 
   .product-item-bottom .add-cart:hover .add-cart-btn {
-      background-color: #053C6B;
+      background-color: #f17424;
       color: #fff;
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
@@ -1021,7 +1021,7 @@ font-family: 'Quicksand', sans-serif;
   .product-item-wrapper:hover {
       -webkit-box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
       box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
-      border: 1px solid #053C6B66;
+      border: 1px solid #f1742466;
       transition: .2s;
       -moz-transition: .2s;
       -webkit-transition: .2s;
@@ -1029,7 +1029,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .product-item-wrapper:hover .product-content-outer .product-name {
-      color: #053C6B;
+      color: #f17424;
   }
 
   .product-item-wrapper:hover .product-imgae .hover-image {
@@ -1043,18 +1043,18 @@ font-family: 'Quicksand', sans-serif;
       margin-top: 10px;
       display: block;
       text-align: center;
-      background: #053C6B;
+      background: #f17424;
       border-radius: 5px;
       padding: 8px 0;
       font-size: 16px;
       font-weight: 700;
       color: #fff;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
   }
 
   .quick-order-btn-inner:hover {
       background: transparent;
-      color: #053C6B;
+      color: #f17424;
   }
 
   .order-btn {
@@ -1074,7 +1074,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .product-image-outer .product-badges.offer span {
-    background: #053C6B;
+    background: #f17424;
 }
 
 .product-image-outer .product-badges.best-sale span {
@@ -1102,7 +1102,7 @@ font-family: 'Quicksand', sans-serif;
     width: 100%;
     color: #fff;
     border: 1px solid transparent;
-    background-color: #053C6B;
+    background-color: #f17424;
     cursor: pointer;
     -webkit-transition: all 300ms linear 0s;
     transition: all 300ms linear 0s;
@@ -1156,7 +1156,7 @@ font-family: 'Quicksand', sans-serif;
 .product-items-slider .owl-nav.disabled .owl-next span {font-size: 30px;}
 
 .product-items-slider .owl-nav.disabled button:hover {
-    background: #053C6B;
+    background: #f17424;
     color: #fff;
 }
 
@@ -1172,7 +1172,7 @@ font-family: 'Quicksand', sans-serif;
 }
 .product-page-banner-section .breadcrumb li a i {
     font-size: 16px;
-    color: #053C6B;
+    color: #f17424;
 }
 .product-page-banner-section .breadcrumb li a {
     position: relative;
@@ -1183,13 +1183,13 @@ font-family: 'Quicksand', sans-serif;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
-    color: #053C6B;
+    color: #f17424;
     padding-right: 5px;
 }
 .product-page-banner-section .breadcrumb li a:after {
     position: absolute;
     content: "/";
-    color: #053C6B;
+    color: #f17424;
     left: 100%;
 }
 .product-page-banner-section .breadcrumb li {
@@ -1267,7 +1267,7 @@ font-family: 'Quicksand', sans-serif;
 .offer-product-price span {
     font-size: 18px;
     font-weight: bold;
-    color: #053C6B;
+    color: #f17424;
 }
 
 .offer-product-price .old-price {
@@ -1283,7 +1283,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .offer-product-item-outer:hover .offer-product-name {
-    color: #053C6B;
+    color: #f17424;
 }
 /*Offer Product css End*/
 
@@ -1318,7 +1318,7 @@ font-family: 'Quicksand', sans-serif;
 .footer__social-list-item-lisk {
     width: 35px;
     height: 35px;
-    background: #053C6B;
+    background: #f17424;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1400,11 +1400,11 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .footer__contact-info-list-item-value:hover {
-    color: #053C6B;
+    color: #f17424;
 }
 
 .footer__list-item-link:hover {
-    color: #053C6B;
+    color: #f17424;
     padding-left: 3px;
 }
 
@@ -1424,7 +1424,7 @@ font-family: 'Quicksand', sans-serif;
 .footer__bottom-text .text-brand {
     display: inline-block;
     margin-left: 5px;
-    color: #053C6B;
+    color: #f17424;
 }
 /*Footer section css End*/
 
@@ -1464,7 +1464,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .product-images-slider-outer .slider-single {
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       border-radius: 10px;
   }
 
@@ -1472,7 +1472,7 @@ font-family: 'Quicksand', sans-serif;
       width: 100%;
       max-width: 90px;
       height: 90px;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       border-radius: 5px;
       padding: 5px;
       margin: auto;
@@ -1507,7 +1507,7 @@ font-family: 'Quicksand', sans-serif;
   .product-details-content .product-price span {
       font-size: 35px;
       font-weight: bold;
-      color: #053C6B;
+      color: #f17424;
   }
 
   .product-details-content .product-price .old-price {
@@ -1527,10 +1527,10 @@ font-family: 'Quicksand', sans-serif;
 
   .purchase-info-outer input {
       background: #fff;
-      border: 2px solid #053C6B !important;
+      border: 2px solid #f17424 !important;
       font-size: 20px;
       font-weight: 700;
-      color: #053C6B;
+      color: #f17424;
       border-radius: 5px;
       padding: 10px 15px 10px 20px;
       max-width: 90px;
@@ -1544,7 +1544,7 @@ font-family: 'Quicksand', sans-serif;
       border: 0;
       font-weight: 700;
       font-size: 16px;
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
       margin-top: 10px;
   }
@@ -1566,7 +1566,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .product-details-info .nav-pills .nav-link.active {
-      background: #053C6B;
+      background: #f17424;
       font-size: 16px;
       font-weight: 700;
       color: #fff;
@@ -1632,12 +1632,12 @@ font-family: 'Quicksand', sans-serif;
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: #053C6B;
+      background-color: #f17424;
   }
 
   .product-details-categoris .category-item-outer:hover {
-      color: #053C6B;
-      border: 1px solid #053C6B;
+      color: #f17424;
+      border: 1px solid #f17424;
       -webkit-box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
       box-shadow: 5px 5px 15px rgb(0 0 0 / 5%);
       transition: all .3s ease;
@@ -1680,7 +1680,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .category-item-radio:checked + .category-item-label {
-    background: #053C6B;
+    background: #f17424;
     color: #fff!important;
     border-radius: 4px;
   }
@@ -1715,13 +1715,13 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .stock-number-outer h6 strong {
-      color: #053C6B;
+      color: #f17424;
   }
 
   .product-details-hot-line {
     margin-top: 20px;
-    background: #053C6B;
-    border: 1px solid #053C6B;
+    background: #f17424;
+    border: 1px solid #f17424;
     padding: 8px 20px;
     border-radius: 5px;
     color: #fff;
@@ -1730,19 +1730,19 @@ font-family: 'Quicksand', sans-serif;
 
 .decrement-btn,.increment-btn {
     background: transparent;
-    border: 2px solid #053C6B!important;
+    border: 2px solid #f17424!important;
     font-size: 14px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     line-height: 28px;
-    color: #053C6B!important;
+    color: #f17424!important;
     display: inline-block;
     text-align: center;
 }
 
 .decrement-btn:hover, .increment-btn:hover {
-    background: #053C6B!important;
+    background: #f17424!important;
     color: #fff;
 }
 
@@ -1752,10 +1752,10 @@ font-family: 'Quicksand', sans-serif;
 
 .cart-sec.item-quantity input[type="number"]{
     background: #fff;
-    border: 1px solid #053C6B!important;
+    border: 1px solid #f17424!important;
     font-size: 20px;
     font-weight: 700;
-    color: #053C6B;
+    color: #f17424;
     border-radius: 5px;
     padding: 8px 5px;
     max-width: 70px;
@@ -1765,8 +1765,8 @@ font-family: 'Quicksand', sans-serif;
 
 .purchase-info-outer .out-stock {
     margin-top: 20px;
-    background: #053C6B;
-    border: 1px solid #053C6B;
+    background: #f17424;
+    border: 1px solid #f17424;
     padding: 8px 20px;
     border-radius: 5px;
     color: #fff;
@@ -1776,7 +1776,7 @@ font-family: 'Quicksand', sans-serif;
 
   /*===========*/
   .product-item-outer img {
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       border-radius: 8px;
       max-width: 500px;
       margin: auto;
@@ -1791,7 +1791,7 @@ font-family: 'Quicksand', sans-serif;
   .product-items-wrap .owl-nav .owl-prev {
       -webkit-transition: all 0.4s ease-out;
       transition: all 0.4s ease-out;
-      border: 1px solid #053C6B!important;
+      border: 1px solid #f17424!important;
       width: 40px;
       height: 40px;
       display: inline-block;
@@ -1802,14 +1802,14 @@ font-family: 'Quicksand', sans-serif;
   .product-items-wrap .owl-nav .owl-prev span,.product-items-wrap .owl-nav .owl-next span {
       font-size: 26px;
       line-height: 26px;
-      color: #053C6B;
+      color: #f17424;
       transition: all 0.4s ease-out;
   }
 
   .product-items-wrap .owl-nav .owl-next {
       -webkit-transition: all 0.4s ease-out;
       transition: all 0.4s ease-out;
-      border: 1px solid #053C6B!important;
+      border: 1px solid #f17424!important;
       width: 40px;
       height: 40px;
       display: inline-block;
@@ -1881,7 +1881,7 @@ font-family: 'Quicksand', sans-serif;
 
   .product-images-slider-outer .slider-content i.fas.fa-chevron-left {
       position: absolute;
-      background: #053C6B;
+      background: #f17424;
       width: 40px;
       height: 40px;
       display: flex;
@@ -1903,7 +1903,7 @@ font-family: 'Quicksand', sans-serif;
 
   .product-images-slider-outer .slider-content i.fas.fa-chevron-right {
       position: absolute;
-      background: #053C6B;
+      background: #f17424;
       width: 40px;
       height: 40px;
       display: flex;
@@ -1969,7 +1969,7 @@ font-family: 'Quicksand', sans-serif;
       border-radius: 4px;
       color: #fff;
       border: 1px solid transparent;
-      background-color: #053C6B;
+      background-color: #f17424;
       cursor: pointer;
       -webkit-transition: all 300ms linear 0s;
       transition: all 300ms linear 0s;
@@ -2019,7 +2019,7 @@ font-family: 'Quicksand', sans-serif;
       border-radius: 4px;
       color: #fff;
       border: 1px solid transparent;
-      background-color: #053C6B;
+      background-color: #f17424;
       cursor: pointer;
       -webkit-transition: all 300ms linear 0s;
       transition: all 300ms linear 0s;
@@ -2107,8 +2107,8 @@ font-family: 'Quicksand', sans-serif;
         padding: 12px 0px;
         border-radius: 4px;
         color: #fff;
-        border: 1px solid #053C6B;
-        background-color: #053C6B;
+        border: 1px solid #f17424;
+        background-color: #f17424;
         cursor: pointer;
         -webkit-transition: all 300ms linear 0s;
         transition: all 300ms linear 0s;
@@ -2117,7 +2117,7 @@ font-family: 'Quicksand', sans-serif;
 
     .order-place-btn-inner:hover{
       background: transparent;
-      color: #053C6B;
+      color: #f17424;
     }
 
   .checkout-item-outer {
@@ -2151,7 +2151,7 @@ font-family: 'Quicksand', sans-serif;
   .checkout-item-price {
       font-size: 16px;
       font-weight: 800;
-      color: #053C6B;
+      color: #f17424;
       margin-bottom: 0;
   }
 
@@ -2161,7 +2161,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .checkout-item-right .delete-btn {
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
       border: none;
       padding: 5px 8px;
@@ -2194,35 +2194,35 @@ font-family: 'Quicksand', sans-serif;
 
   .qty-increment-btn {
       background: transparent;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       font-size: 14px;
       width: 25px;
       height: 25px;
       border-radius: 50%;
       line-height: 22px;
-      color: #053C6B;
+      color: #f17424;
   }
   .qty-decrement-btn {
       background: transparent;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       font-size: 14px;
       width: 25px;
       height: 25px;
       border-radius: 50%;
       line-height: 22px;
-      color: #053C6B;
+      color: #f17424;
   }
   .qty-increment-btn:hover,.qty-decrement-btn:hover {
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
   }
 
   .checkout-item-left .checkout-product-incre-decre input {
       background: #fff;
-      border: 1px solid #053C6B !important;
+      border: 1px solid #f17424 !important;
       font-size: 18px;
       font-weight: 700;
-      color: #053C6B;
+      color: #f17424;
       border-radius: 5px;
       text-align: center;
       max-width: 75px;
@@ -2344,9 +2344,9 @@ font-family: 'Quicksand', sans-serif;
 }
 
   /* .cart-sec.item-remove-btn button.remove-product {
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       border-radius: 5px;
       font-size: 16px;
       font-family: 'Poppins';
@@ -2408,10 +2408,10 @@ font-family: 'Quicksand', sans-serif;
 
   .cart-responsive-product-total .item-quantity .quantity input {
       background: #fff;
-      border: 1px solid #053C6B !important;
+      border: 1px solid #f17424 !important;
       font-size: 18px;
       font-weight: 700;
-      color: #053C6B;
+      color: #f17424;
       border-radius: 5px;
       padding: 5px;
       max-width: 60px;
@@ -2420,9 +2420,9 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .cart-responsive-product-total .item-remove-btn .remove-product {
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       font-size: 16px;
       font-family: 'Poppins';
       padding: 3px 5px;
@@ -2662,7 +2662,7 @@ font-family: 'Quicksand', sans-serif;
   .contact-info-icon {
       display: inline-block;
       padding: 20px 30px;
-      background: #053C6B;
+      background: #f17424;
       margin-bottom: 20px;
   }
 
@@ -2685,7 +2685,7 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .contact-info-item a:hover,.contact-info-item p:hover {
-      color: #053C6B;
+      color: #f17424;
   }
 
   .contact-info-item p {
@@ -2728,7 +2728,7 @@ font-family: 'Quicksand', sans-serif;
       width: 100%;
       padding: 10px 0;
       border: none;
-      background: #053C6B;
+      background: #f17424;
       color: #FFF;
       font-size: 18px;
       font-weight: 500;
@@ -2939,7 +2939,7 @@ font-family: 'Quicksand', sans-serif;
   .our-mission-section-heading {
       text-align: center;
       padding: 10px 0;
-      background: #053C6B;
+      background: #f17424;
       margin-bottom: 20px;
   }
 
@@ -2965,7 +2965,7 @@ font-family: 'Quicksand', sans-serif;
   .future-program-section-heading {
       text-align: center;
       padding: 10px 0;
-      background: #053C6B;
+      background: #f17424;
       margin-bottom: 20px;
   }
 
@@ -3008,7 +3008,7 @@ font-family: 'Quicksand', sans-serif;
 
   .our-location-section-heading {
       text-align: center;
-      background: #053C6B;
+      background: #f17424;
       padding: 10px 0;
       margin-bottom: 20px;
   }
@@ -3024,17 +3024,17 @@ font-family: 'Quicksand', sans-serif;
 
   .future-program-section-content .title {
       text-align: center;
-      border-bottom: 1px solid #053C6B;
+      border-bottom: 1px solid #f17424;
       padding-bottom: 10px;
       margin-bottom: 20px;
       font-size: 25px;
       font-weight: 600;
-      color: #053C6B;
+      color: #f17424;
   }
 
   .future-program-section-content .apply-btn {
       display: inline-block;
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
       padding: 7px 20px;
       border-radius: 5px;
@@ -3072,7 +3072,7 @@ font-family: 'Quicksand', sans-serif;
       align-items: center;
       justify-content: space-between;
       padding: 10px;
-      background: #053C6B;
+      background: #f17424;
       margin-bottom: 20px;
       color: #fff;
   }
@@ -3176,12 +3176,12 @@ font-family: 'Quicksand', sans-serif;
 
   .input-item-wrapper input:focus {
       box-shadow: none;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
   }
 
   .input-item-wrapper textarea:focus {
       box-shadow: none;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
   }
 
   .return-process-btn-outer {
@@ -3190,9 +3190,9 @@ font-family: 'Quicksand', sans-serif;
   }
 
   .return-process-btn-inner {
-      background: #053C6B;
+      background: #f17424;
       color: #fff;
-      border: 1px solid #053C6B;
+      border: 1px solid #f17424;
       border-radius: 5px;
       padding: 10px 30px;
       font-size: 18px;
@@ -3203,7 +3203,7 @@ font-family: 'Quicksand', sans-serif;
 
   .return-process-btn-inner:hover {
       background: transparent;
-      color: #053C6B;
+      color: #f17424;
   }
   /*Return Process section css End*/
 
@@ -3270,7 +3270,7 @@ font-family: 'Quicksand', sans-serif;
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      background: #053C6B;
+      background: #f17424;
       position: absolute;
   }
   .checkmark-circle .checkmark {
@@ -3385,22 +3385,22 @@ font-family: 'Quicksand', sans-serif;
      font-size: 20px;
      font-weight: 600;
      line-height: 28px;
-     color: #053C6B;
+     color: #f17424;
   }
 
   .thank-you-btn-inner {
-     background: #053C6B;
+     background: #f17424;
      padding: 10px 20px;
      display: inline-block;
      font-size: 18px;
      font-weight: 700;
      color: #fff;
      border-radius: 5px;
-     border: 1px solid #053C6B;
+     border: 1px solid #f17424;
   }
 
   .thank-you-btn-inner:hover {
      background: transparent;
-     color: #053C6B;
+     color: #f17424;
   }
   /*Thank you page css End*/
