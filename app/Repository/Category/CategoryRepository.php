@@ -16,12 +16,15 @@ class CategoryRepository implements CategoryInterface
     public function storeOrUpdate($id = null, $data = [])
     {
         if(is_null($id)){
-            if ($data['image']){
+            $image = null;
+            $bannerImage = null;
+            
+            if (isset($data['image']) && $data['image']){
                 $image = time().'.'. $data['image']->extension();
                 $data['image']->move(public_path('category'), $image);
             }
 
-            if ($data['banner']){
+            if (isset($data['banner']) && $data['banner']){
                 $bannerImage = rand(99999, 1000000).'.'. $data['banner']->extension();
                 $data['banner']->move(public_path('category'), $bannerImage);
             }
