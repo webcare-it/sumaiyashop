@@ -101,7 +101,7 @@
                                                     <input type="file" name="image" id="image" class="form-control">
                                                     <span style="color: red"> {{ $errors->has('image') ? $errors->first('image') : ' ' }}</span>
                                                 </div>
-                                                <label>Gallery image <small style="color: red; font-size: 18px;">*</small></label>
+                                                <label>Gallery image <small style="color: gray; font-size: 14px;">(Optional)</small></label>
                                                 <div class="input-group mb-3">
                                                     <input type="file" name="gallery_image[]" id="gallery_image" class="form-control">
                                                     <button class="btn btn-sm btn-primary" type="button" id="addMore">
@@ -201,7 +201,6 @@
                 </div>
             </div>
         </div>
-    </div>
 @endsection
 
 @push('script')

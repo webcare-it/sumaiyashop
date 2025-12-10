@@ -99,7 +99,7 @@
                                                 </div>
                                                 <label style="padding-bottom: 5px; font-weight: 600; font-size: 15px; letter-spacing: 1px;">
                                                     Gallery Image, Price, Color, and Size
-                                                    <small style="color: red; font-size: 18px;">*</small>
+                                                    <small style="color: gray; font-size: 14px;">(Optional)</small>
                                                 </label>
 
                                                 @if(isset($product['product_images']) && count($product['product_images']) > 0)
@@ -107,8 +107,8 @@
                                                         <div class="row g-2 align-items-center mb-2 removeRow">
                                                             <!-- Gallery Image -->
                                                             <div class="col-md-4">
-                                                                <label for="">Gallery Image <span class="text-danger">*</span></label>
-                                                                <input type="file" name="gallery_image[]" class="form-control" required>
+                                                                <label for="">Gallery Image <span class="text-muted">(Optional)</span></label>
+                                                                <input type="file" name="gallery_image[]" class="form-control">
                                                             </div>
 
                                                             <!-- Wholesale Price -->
@@ -142,8 +142,8 @@
                                                 @else
                                                     <div class="row g-2 align-items-center mb-2 removeRow">
                                                         <div class="col-md-3">
-                                                            <label for="">Gallery Image <span class="text-danger">*</span></label>
-                                                            <input type="file" name="gallery_image[]" class="form-control" required>
+                                                            <label for="">Gallery Image <span class="text-muted">(Optional)</span></label>
+                                                            <input type="file" name="gallery_image[]" class="form-control">
                                                         </div>
                                                         <div class="col-md-2">
                                                             <label for="">Wholesale Price</label>
@@ -262,13 +262,13 @@
             let html = `
             <div class="row g-2 align-items-center mb-2 removeRow">
                 <div class="col-md-3">
-                    <input type="file" name="gallery_image[]" class="form-control" required>
+                    <input type="file" name="gallery_image[]" class="form-control">
                 </div>
                 <div class="col-md-2">
-                    <input type="text" name="wholesale_price_variable[]" class="form-control" placeholder="Wholesale Price" required>
+                    <input type="text" name="wholesale_price_variable[]" class="form-control" placeholder="Wholesale Price">
                 </div>
                 <div class="col-md-2">
-                    <input type="text" name="price[]" class="form-control" placeholder="Price">
+                    <input type="text" name="price[]" class="form-control" placeholder="Price" required>
                 </div>
                 <div class="col-md-2">
                     <input type="text" name="color[]" class="form-control" placeholder="Color">
