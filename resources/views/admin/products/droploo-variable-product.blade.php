@@ -291,5 +291,15 @@
         $(document).on('click', '.remove', function () {
             $(this).closest('.removeRow').remove();
         });
+        
+        // Form submission handler to remove empty gallery image inputs
+        $('form').submit(function() {
+            // Remove any empty gallery image inputs
+            $('input[name="gallery_image[]"]').each(function() {
+                if (this.files.length === 0) {
+                    $(this).closest('.row').remove();
+                }
+            });
+        });
     </script>
 @endpush

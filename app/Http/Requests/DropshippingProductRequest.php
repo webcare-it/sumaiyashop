@@ -33,7 +33,7 @@ class DropshippingProductRequest extends FormRequest
             'long_description'  => 'required',
             'image'             => 'required|image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
             'gallery_image'     => 'nullable|array',
-            'gallery_image.*'   => 'image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
+            'gallery_image.*'   => 'nullable|image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
         ];
     }
 }

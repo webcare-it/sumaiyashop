@@ -214,7 +214,7 @@
         $('#addMore').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeRow">'
-                html+='<input type="file" name="gallery_image[]" id="gallery_image" class="form-control">'
+                html+='<input type="file" name="gallery_image[]" class="form-control">'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="remove">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -231,7 +231,7 @@
         $('#addMoreSize').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeSizeRow">'
-                html+='<input type="text" name="size[]" id="size" class="form-control" placeholder="Product size">'
+                html+='<input type="text" name="size[]" class="form-control" placeholder="Product size">'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="removeSize">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -248,7 +248,7 @@
         $('#addMoreColor').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeColorRow">'
-                html+='<input type="text" name="color[]" id="color" class="form-control" placeholder="Product color">'
+                html+='<input type="text" name="color[]" class="form-control" placeholder="Product color">'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="removeColor">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -260,6 +260,16 @@
         // remove row
         $(document).on('click', '#removeColor', function () {
             $(this).closest('#removeColorRow').remove();
+        });
+        
+        // Form submission handler to remove empty gallery image inputs
+        $('form').submit(function() {
+            // Remove any empty gallery image inputs
+            $('input[name="gallery_image[]"]').each(function() {
+                if (this.files.length === 0) {
+                    $(this).closest('.input-group').remove();
+                }
+            });
         });
     </script>
 @endpush

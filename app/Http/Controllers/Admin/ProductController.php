@@ -144,21 +144,24 @@ class ProductController extends Controller
             if($request->gallery_image){
                 $imageGallery = $request->gallery_image;
                 foreach($imageGallery as $image){
-                    $galleryImageName = rand().$request->name.'.'.$image->extension();
-                    $imgGallery = Image::make($image->path());
-                    $imgGallery->resize(440, 440, function ($const) {
-                        $const->aspectRatio();
-                    })->save('galleryImage'. '/'. $galleryImageName);
+                    // Check if the image is actually uploaded (not empty)
+                    if($image && $image->isValid()) {
+                        $galleryImageName = rand().$request->name.'.'.$image->extension();
+                        $imgGallery = Image::make($image->path());
+                        $imgGallery->resize(440, 440, function ($const) {
+                            $const->aspectRatio();
+                        })->save('galleryImage'. '/'. $galleryImageName);
 
-                    $productGalleryImage = new ProductImage();
-                    if($request->type){
-                        $productGalleryImage->product_id = $product->id;
+                        $productGalleryImage = new ProductImage();
+                        if($request->type){
+                            $productGalleryImage->product_id = $product->id;
+                        }
+                        else{
+                            $productGalleryImage->product_id = $product->id;
+                        }
+                        $productGalleryImage->gallery_image = $galleryImageName;
+                        $productGalleryImage->save();
                     }
-                    else{
-                        $productGalleryImage->product_id = $product->id;
-                    }
-                    $productGalleryImage->gallery_image = $galleryImageName;
-                    $productGalleryImage->save();
                 }
             }
         }
@@ -276,19 +279,22 @@ class ProductController extends Controller
                 $sizes = $request->input('size');
 
                 foreach ($galleryImages as $index => $image) {
-                    $galleryImageName = rand().$request->name.'.'.$image->extension();
-                    $imgGallery = Image::make($image->path());
-                    $imgGallery->resize(440, 440, function ($const) {
-                        $const->aspectRatio();
-                    })->save('galleryImage'. '/'. $galleryImageName);
+                    // Check if the image is actually uploaded (not empty)
+                    if($image && $image->isValid()) {
+                        $galleryImageName = rand().$request->name.'.'.$image->extension();
+                        $imgGallery = Image::make($image->path());
+                        $imgGallery->resize(440, 440, function ($const) {
+                            $const->aspectRatio();
+                        })->save('galleryImage'. '/'. $galleryImageName);
 
-                    $productGalleryImage = new ProductImage();
-                    $productGalleryImage->product_id = $product->id;  // assuming $product is available
-                    $productGalleryImage->gallery_image = $galleryImageName;
-                    $productGalleryImage->price = $prices[$index];
-                    $productGalleryImage->color = $colors[$index];
-                    $productGalleryImage->size = $sizes[$index];
-                    $productGalleryImage->save();
+                        $productGalleryImage = new ProductImage();
+                        $productGalleryImage->product_id = $product->id;  // assuming $product is available
+                        $productGalleryImage->gallery_image = $galleryImageName;
+                        $productGalleryImage->price = $prices[$index];
+                        $productGalleryImage->color = $colors[$index];
+                        $productGalleryImage->size = $sizes[$index];
+                        $productGalleryImage->save();
+                    }
                 }
             }
         }
