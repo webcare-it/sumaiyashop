@@ -1042,9 +1042,9 @@ class ProductController extends Controller
     //droploo Products with API...
     public function droplooProductList()
     {
-        $appKey = 'CIZJ4VW7S50YKZ8W';
-        $appSecret = 'sBmFpWRojvcUJ3JPn35VYNlZe34pHUhM';
-        $userName = 'hossain-ahmad_tawhidiancom';
+        $appKey = 'MFCPZHNCFESCI04M';
+        $appSecret = 'jj556dDnE75Xagq34G4QjXgGzIhggVzU';
+        $userName = 'sumaiya-shop_sumaiyashopcom';
         $apiUrl = 'https://dropshipper.droploo.com/api/products';
 
         $response = Http::withHeaders([
@@ -1073,9 +1073,9 @@ class ProductController extends Controller
         }
         //Is the Product Already Added....
 
-        $appKey = 'CIZJ4VW7S50YKZ8W';
-        $appSecret = 'sBmFpWRojvcUJ3JPn35VYNlZe34pHUhM';
-        $userName = 'hossain-ahmad_tawhidiancom';
+        $appKey = 'MFCPZHNCFESCI04M';
+        $appSecret = 'jj556dDnE75Xagq34G4QjXgGzIhggVzU';
+        $userName = 'sumaiya-shop_sumaiyashopcom';
         $apiUrl = 'https://dropshipper.droploo.com/api/product/'.$id;
 
         $response = Http::withHeaders([
