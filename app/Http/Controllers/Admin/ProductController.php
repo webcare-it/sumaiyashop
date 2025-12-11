@@ -96,6 +96,7 @@ class ProductController extends Controller
 
     public function store(ProductRequest $request)
     {
+        dd($request->all());
         $image = $request->file('image');
         $input['image'] = rand().'pro_main'.$request->name.'.'.$image->getClientOriginalExtension();
         $destinationPath = 'product/images';
