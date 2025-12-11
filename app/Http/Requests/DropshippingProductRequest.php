@@ -36,4 +36,22 @@ class DropshippingProductRequest extends FormRequest
             'gallery_image.*'   => 'required|image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
         ];
     }
+
+    /**
+     * Get custom messages for validator errors.
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'gallery_image.required' => 'The gallery image field is required. You must upload at least one gallery image.',
+            'gallery_image.array' => 'Gallery images must be provided as files.',
+            'gallery_image.min' => 'You must upload at least one gallery image.',
+            'gallery_image.*.required' => 'Each gallery image field must have an image file.',
+            'gallery_image.*.image' => 'Each file must be a valid image.',
+            'gallery_image.*.mimes' => 'Each image must be a file of type: jpg, jpeg, png, gif, svg, webp.',
+            'gallery_image.*.max' => 'Each image must not be greater than 2048 kilobytes.',
+        ];
+    }
 }

@@ -291,5 +291,24 @@
         $(document).on('click', '.remove', function () {
             $(this).closest('.removeRow').remove();
         });
+
+        // Form submission validation for gallery images
+        $('form').on('submit', function(e) {
+            let galleryImages = $('input[name="gallery_image[]"]');
+            let hasValidImage = false;
+            
+            galleryImages.each(function() {
+                if (this.files && this.files.length > 0) {
+                    hasValidImage = true;
+                }
+            });
+            
+            if (!hasValidImage) {
+                e.preventDefault();
+                alert('Gallery image is required! Please upload at least one gallery image.');
+                $('input[name="gallery_image[]"]').first().focus();
+                return false;
+            }
+        });
     </script>
 @endpush
