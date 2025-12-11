@@ -32,9 +32,40 @@ class DropshippingProductRequest extends FormRequest
             'product_type'      => 'required',
             'long_description'  => 'required',
             'image'             => 'required|image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
-            'gallery_image'     => 'required|array|min:1',
-            'gallery_image.*'   => 'required|image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
+            'gallery_image'     => 'array',
+            'gallery_image.*'   => 'image|mimes:jpg,jpeg,png,gif,svg,webp|max:2048',
         ];
+    }
+
+    /**
+     * Configure the validator instance.
+     *
+     * @param  \Illuminate\Validation\Validator  $validator
+     * @return void
+     */
+    public function withValidator($validator)
+    {
+        $validator->after(function ($validator) {
+            // Check if gallery_image array has any files uploaded
+            $galleryImages = $this->file('gallery_image');
+            
+            if (empty($galleryImages) || !is_array($galleryImages)) {
+                $validator->errors()->add('gallery_image', 'The gallery image field is required. You must upload at least one gallery image.');
+            } else {
+                // Check if all files in the array are empty
+                $hasValidFile = false;
+                foreach ($galleryImages as $file) {
+                    if ($file && $file->isValid()) {
+                        $hasValidFile = true;
+                        break;
+                    }
+                }
+                
+                if (!$hasValidFile) {
+                    $validator->errors()->add('gallery_image', 'The gallery image field is required. You must upload at least one gallery image.');
+                }
+            }
+        });
     }
 
     /**
@@ -45,10 +76,6 @@ class DropshippingProductRequest extends FormRequest
     public function messages()
     {
         return [
-            'gallery_image.required' => 'The gallery image field is required. You must upload at least one gallery image.',
-            'gallery_image.array' => 'Gallery images must be provided as files.',
-            'gallery_image.min' => 'You must upload at least one gallery image.',
-            'gallery_image.*.required' => 'Each gallery image field must have an image file.',
             'gallery_image.*.image' => 'Each file must be a valid image.',
             'gallery_image.*.mimes' => 'Each image must be a file of type: jpg, jpeg, png, gif, svg, webp.',
             'gallery_image.*.max' => 'Each image must not be greater than 2048 kilobytes.',

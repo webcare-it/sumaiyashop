@@ -103,7 +103,7 @@
                                                 </div>
                                                 <label>Gallery image <small style="color: red; font-size: 18px;">*</small></label>
                                                 <div class="input-group mb-3">
-                                                    <input type="file" name="gallery_image[]" id="gallery_image" class="form-control">
+                                                    <input type="file" name="gallery_image[]" id="gallery_image" class="form-control" required>
                                                     <button class="btn btn-sm btn-primary" type="button" id="addMore">
                                                         <i class="bx bx-plus-circle" aria-hidden="true" style="margin-left: 7px;"></i>
                                                     </button>
