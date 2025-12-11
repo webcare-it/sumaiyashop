@@ -101,7 +101,7 @@
                                                     <input type="file" name="image" id="image" class="form-control">
                                                     <span style="color: red"> {{ $errors->has('image') ? $errors->first('image') : ' ' }}</span>
                                                 </div>
-                                                <label>Gallery image <small style="color: gray; font-size: 14px;">(Optional)</small></label>
+                                                <label>Gallery image <small style="color: red; font-size: 18px;">*</small></label>
                                                 <div class="input-group mb-3">
                                                     <input type="file" name="gallery_image[]" id="gallery_image" class="form-control">
                                                     <button class="btn btn-sm btn-primary" type="button" id="addMore">
@@ -214,7 +214,7 @@
         $('#addMore').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeRow">'
-                html+='<input type="file" name="gallery_image[]" class="form-control">'
+                html+='<input type="file" name="gallery_image[]" class="form-control" required>'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="remove">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -260,16 +260,6 @@
         // remove row
         $(document).on('click', '#removeColor', function () {
             $(this).closest('#removeColorRow').remove();
-        });
-        
-        // Form submission handler to remove empty gallery image inputs
-        $('form').submit(function() {
-            // Remove any empty gallery image inputs
-            $('input[name="gallery_image[]"]').each(function() {
-                if (this.files.length === 0) {
-                    $(this).closest('.input-group').remove();
-                }
-            });
         });
     </script>
 @endpush
