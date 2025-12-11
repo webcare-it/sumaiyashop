@@ -1017,9 +1017,9 @@ class ReportController extends Controller
                 return redirect()->back()->with('error', 'Order not found.');
             }
 
-            $appKey = 'MFCPZHNCFESCI04M';
-        $appSecret = 'jj556dDnE75Xagq34G4QjXgGzIhggVzU';
-        $userName = 'sumaiya-shop_sumaiyashopcom';
+            $appKey = 'CIZJ4VW7S50YKZ8W';
+        $appSecret = 'sBmFpWRojvcUJ3JPn35VYNlZe34pHUhM';
+        $userName = 'hossain-ahmad_tawhidiancom';
             $apiEndpoint = 'https://backend.droploo.com/api/product/create-order';
 
             $payload = [

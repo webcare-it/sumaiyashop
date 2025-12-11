@@ -103,7 +103,7 @@
                                                 </div>
                                                 <label>Gallery image <small style="color: red; font-size: 18px;">*</small></label>
                                                 <div class="input-group mb-3">
-                                                    <input type="file" name="gallery_image[]" id="gallery_image" class="form-control" required>
+                                                    <input type="file" name="gallery_image[]" id="gallery_image" class="form-control">
                                                     <button class="btn btn-sm btn-primary" type="button" id="addMore">
                                                         <i class="bx bx-plus-circle" aria-hidden="true" style="margin-left: 7px;"></i>
                                                     </button>
@@ -201,6 +201,7 @@
                 </div>
             </div>
         </div>
+    </div>
 @endsection
 
 @push('script')
@@ -214,7 +215,7 @@
         $('#addMore').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeRow">'
-                html+='<input type="file" name="gallery_image[]" class="form-control" required>'
+                html+='<input type="file" name="gallery_image[]" id="gallery_image" class="form-control">'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="remove">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -231,7 +232,7 @@
         $('#addMoreSize').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeSizeRow">'
-                html+='<input type="text" name="size[]" class="form-control" placeholder="Product size">'
+                html+='<input type="text" name="size[]" id="size" class="form-control" placeholder="Product size">'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="removeSize">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -248,7 +249,7 @@
         $('#addMoreColor').click(function(){
             let html = '';
             html+='<div class="input-group mb-3" id="removeColorRow">'
-                html+='<input type="text" name="color[]" class="form-control" placeholder="Product color">'
+                html+='<input type="text" name="color[]" id="color" class="form-control" placeholder="Product color">'
                 html+='<button class="btn btn-sm btn-danger" type="button" id="removeColor">'
                     html+='<i class="bx bx-minus" aria-hidden="true" style="margin-left: 7px;"></i>'
                 html+='</button>'
@@ -260,25 +261,6 @@
         // remove row
         $(document).on('click', '#removeColor', function () {
             $(this).closest('#removeColorRow').remove();
-        });
-
-        // Form submission validation for gallery images
-        $('form').on('submit', function(e) {
-            let galleryImages = $('input[name="gallery_image[]"]');
-            let hasValidImage = false;
-            
-            galleryImages.each(function() {
-                if (this.files && this.files.length > 0) {
-                    hasValidImage = true;
-                }
-            });
-            
-            if (!hasValidImage) {
-                e.preventDefault();
-                alert('Gallery image is required! Please upload at least one gallery image.');
-                $('input[name="gallery_image[]"]').first().focus();
-                return false;
-            }
         });
     </script>
 @endpush

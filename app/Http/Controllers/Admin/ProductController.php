@@ -96,7 +96,6 @@ class ProductController extends Controller
 
     public function store(ProductRequest $request)
     {
-        dd($request->all());
         $image = $request->file('image');
         $input['image'] = rand().'pro_main'.$request->name.'.'.$image->getClientOriginalExtension();
         $destinationPath = 'product/images';
@@ -1043,9 +1042,9 @@ class ProductController extends Controller
     //droploo Products with API...
     public function droplooProductList()
     {
-        $appKey = 'MFCPZHNCFESCI04M';
-        $appSecret = 'jj556dDnE75Xagq34G4QjXgGzIhggVzU';
-        $userName = 'sumaiya-shop_sumaiyashopcom';
+        $appKey = 'CIZJ4VW7S50YKZ8W';
+        $appSecret = 'sBmFpWRojvcUJ3JPn35VYNlZe34pHUhM';
+        $userName = 'hossain-ahmad_tawhidiancom';
         $apiUrl = 'https://dropshipper.droploo.com/api/products';
 
         $response = Http::withHeaders([
@@ -1074,9 +1073,9 @@ class ProductController extends Controller
         }
         //Is the Product Already Added....
 
-        $appKey = 'MFCPZHNCFESCI04M';
-        $appSecret = 'jj556dDnE75Xagq34G4QjXgGzIhggVzU';
-        $userName = 'sumaiya-shop_sumaiyashopcom';
+        $appKey = 'CIZJ4VW7S50YKZ8W';
+        $appSecret = 'sBmFpWRojvcUJ3JPn35VYNlZe34pHUhM';
+        $userName = 'hossain-ahmad_tawhidiancom';
         $apiUrl = 'https://dropshipper.droploo.com/api/product/'.$id;
 
         $response = Http::withHeaders([
